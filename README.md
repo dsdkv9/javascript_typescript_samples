@@ -1,1 +1,1 @@
-# javascript_samples
+Javascript sample for codes for Test Automation Engineers. 
