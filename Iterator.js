@@ -40,6 +40,13 @@ while (i < 3) { // shows 0, then 1, then 2
   i++;
 }
 
+console.log("*********** Do While ***********");
+let x = 4;
+
+do {
+  console.log(`do while test -> x = ${x}`);
+} while (x <= 3)
+
 console.log("*********** For Loop ***********");
 
 for (let j = 1; j < maxcount; j++) {
@@ -57,7 +64,36 @@ outer: for (let i = 0; i < 3; i++) {
     // if an empty string or canceled, then break out of both loops
     if (!input) break outer; // (*)
 
-    // do something with the value...
+    //  something with the value...
   }
 }
 console.log('Done!');
+
+
+console.log("*********** Switch ***********");
+
+let mode = "Air";
+
+switch (mode) {
+  case "Train":
+    console.log(`Mode type: ${mode}`);
+    break;
+  case "Bus":
+    console.log(`Mode type: ${mode}`);
+    break;
+  case "Air":
+    console.log(`Mode type: ${mode}`);
+    break;
+  default:
+    console.log( "Go by own vehicle" );
+}
+
+if (mode === 'Air') {
+  console.log(`Mode type: ${mode}`);
+} else if (mode === 'Train') {
+  console.log(`Mode type: ${mode}`);
+} else if (mode === 'Bus') {
+  console.log(`Mode type: ${mode}`);
+} else {
+  console.log( "Go by own vehicle" );
+}
