@@ -77,3 +77,41 @@ if (true == 1) {
 let testUndef;
 console.log(`testUndef: ${testUndef} & type: ${typeof(emtestUndefpid)}`);
 
+let str = "Hhe Llo";
+
+let strLength = str.length;
+
+console.log(`str: ${str} & length: ${strLength}`);
+
+let newStr = [];
+
+for (let i = 0; i < strLength; i++) {
+    let asciiValue = str[i].charCodeAt(0);
+    //console.log(str[i] + " " + asciiValue);
+    if (asciiValue >= 65 & asciiValue <=90) {
+        //console.log(str[i]);
+        newStr.push(str[i]);
+    } else if (asciiValue >= 97 & asciiValue <=122) {
+        //console.log("Covert to upper case");
+        asciiValue = asciiValue - 32;
+        //console.log(String.fromCharCode(asciiValue));
+        newStr.push(String.fromCharCode(asciiValue));
+    } else {
+        console.log();
+    }
+}
+
+let newStrLength = newStr.length;
+
+console.log(`newStrLength: ${newStr} & length: ${newStrLength}`);
+
+console.log(`str: ${str} & coverted to uppercase: ${str.toUpperCase()}`);
+
+console.log(typeof(str.toUpperCase()));
+
+console.log(Boolean(strLength));
+
+
+str = "Hello World abcd";
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
