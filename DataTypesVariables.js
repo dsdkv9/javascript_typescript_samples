@@ -77,7 +77,9 @@ if (true == 1) {
 let testUndef;
 console.log(`testUndef: ${testUndef} & type: ${typeof(emtestUndefpid)}`);
 
-let str = "Hhe Llo";
+let str = "Welcome to Office";
+
+let newStr1 = '';
 
 let strLength = str.length;
 
@@ -87,15 +89,17 @@ let newStr = [];
 
 for (let i = 0; i < strLength; i++) {
     let asciiValue = str[i].charCodeAt(0);
-    //console.log(str[i] + " " + asciiValue);
+    console.log(str[i] + " " + asciiValue);
     if (asciiValue >= 65 & asciiValue <=90) {
-        //console.log(str[i]);
+        console.log(str[i]);
         newStr.push(str[i]);
+        newStr1 = newStr1.concat(str[i].charCodeAt(0));
     } else if (asciiValue >= 97 & asciiValue <=122) {
-        //console.log("Covert to upper case");
+        console.log("Covert to upper case");
         asciiValue = asciiValue - 32;
-        //console.log(String.fromCharCode(asciiValue));
+        console.log(String.fromCharCode(asciiValue));
         newStr.push(String.fromCharCode(asciiValue));
+        newStr1 = newStr1.concat(String.fromCharCode(asciiValue));
     } else {
         console.log();
     }
@@ -103,7 +107,9 @@ for (let i = 0; i < strLength; i++) {
 
 let newStrLength = newStr.length;
 
-console.log(`newStrLength: ${newStr} & length: ${newStrLength}`);
+console.log(`newStrLength: ${newStr1} & length: ${newStr1.length}`);
+
+console.log(`str: ${str} & coverted to uppercase: ${newStr1}`);
 
 console.log(`str: ${str} & coverted to uppercase: ${str.toUpperCase()}`);
 
@@ -115,3 +121,19 @@ console.log(Boolean(strLength));
 str = "Hello World abcd";
 console.log(str.toUpperCase());
 console.log(str.toLowerCase());
+
+
+console.log( typeof 0 ); // "number"
+
+console.log( typeof new Number(0) ); // "object"!
+
+let number1 = new Number(100);
+
+console.log(`number1: ${number1.toLocaleString()}`);
+
+console.log( parseInt('1212px12') );
+
+
+str = 'Widget with id';
+
+// console.log(str.equalsIgnoreCase().indexOf('widget'));
