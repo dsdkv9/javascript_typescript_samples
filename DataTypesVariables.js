@@ -123,15 +123,15 @@ console.log(str.toUpperCase());
 console.log(str.toLowerCase());
 
 
-console.log( typeof 0 ); // "number"
+let tempNum = 0;
+console.log(`tempNum: ${tempNum} & type: ${typeof tempNum}`); // "number"
 
-console.log( typeof new Number(0) ); // "object"!
+let tempNumObj = new Number(100);
+console.log(`tempNumObj: ${tempNumObj} & type: ${typeof tempNumObj}`); // "object"!
 
-let number1 = new Number(100);
+tempNumObj = '1000px';
 
-console.log(`number1: ${number1.toLocaleString()}`);
-
-console.log( parseInt('1212px12') );
+console.log(parseInt('100px'));
 
 
 str = 'Widget with id';

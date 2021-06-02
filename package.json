@@ -1,0 +1,20 @@
+{
+  "name": "javascript_samples",
+  "version": "1.0.0",
+  "description": "Javascript sample for codes for Test Automation Engineers.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dsdkv9@github.com/dsdkv9/javascript_samples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsdkv9/javascript_samples/issues"
+  },
+  "homepage": "https://github.com/dsdkv9/javascript_samples#readme"
+}
