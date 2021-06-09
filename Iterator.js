@@ -97,3 +97,25 @@ if (mode === 'Air') {
 } else {
   console.log( "Go by own vehicle" );
 }
+
+
+let tempStr = "test";
+console.log('***** String is iterable *****');
+// for (let char of tempStr ) {
+//   // triggers 4 times: once for each character
+//   console.log( char ); // t, then e, then s, then t
+// }
+
+let iterator = tempStr[Symbol.iterator]();
+console.log(`iterator type of : ${typeof iterator}  & ${iterator}`);
+
+while (true) {
+  let result = iterator.next();
+  //console.log(result.done);
+  if (result.done) break;
+  console.log(result.value); // outputs characters one by one
+}
+
+let fruits = ["Apple", "Orange", "Plum"];
+
+iterator = fruits.iterator;
