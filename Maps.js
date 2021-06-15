@@ -65,8 +65,20 @@ let empMap = new Map([
   }
  
 
-  recipeMap.forEach((v, k, m) => {
-    console.log(k);
-    console.log(v);
-    console.log(m);
-  });
+  // recipeMap.forEach((v, k, m) => {
+  //   console.log(k);
+  //   console.log(v);
+  //   console.log(m);
+  // });
+
+
+  let testSet = new Set();
+  testSet.add('Deepak', 10001);
+  testSet.add('Vijaya', 10002);
+  testSet.add('Ravi', 10003);
+
+  console.log(testSet.keys());
+
+  console.log(testSet.values());
+
+  // TODO -> MAP to OBJECT and Vice-Versa
