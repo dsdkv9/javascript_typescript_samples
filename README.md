@@ -7,3 +7,14 @@ object-oriented-programming-in-javascript:
 
 -   
 
+Map reference guide:
+https://www.javascripttutorial.net/es6/javascript-map/
+
+Cheatsheet:
+https://github.com/mbeaudru/modern-js-cheatsheet#-arrow-function
+
+Functions:
+https://dmitripavlutin.com/6-ways-to-declare-javascript-functions/
+
+Export/ Import:
+https://stackabuse.com/how-to-use-module-exports-in-node-js

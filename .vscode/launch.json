@@ -5,17 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Program",
             "type": "node",
+            "runtimeVersion": "14.17.0", // If i need to run node 4.8.7
             "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "autoAttachChildProcesses": true,
-            "skipFiles": [
-                "${workspaceFolder}/node_modules/**/*.js",
-            ],
-            "console": "integratedTerminal",
-            "runtimeExecutable": "yarn",
-            "args": [],
+            "name": "Launch",
+            "program": "${workspaceFolder}/*.js",
+            "runtimeExecutable": "C:/Users/deepak/AppData/Roaming/nvm/v14.17.0/node"
         }
     ]
 }
