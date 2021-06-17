@@ -6,11 +6,9 @@
     "configurations": [
         {
             "type": "node",
-            "runtimeVersion": "14.17.0", // If i need to run node 4.8.7
             "request": "launch",
             "name": "Launch",
-            "program": "${workspaceFolder}/*.js",
-            "runtimeExecutable": "C:/Users/deepak/AppData/Roaming/nvm/v14.17.0/node"
+            "runtimeVersion": "C:/Users/deepak/AppData/Roaming/nvm/v14.17.0/node", // If i need to run node 4.8.7
         }
     ]
 }

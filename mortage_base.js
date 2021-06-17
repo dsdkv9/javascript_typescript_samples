@@ -38,5 +38,5 @@ class Mortgage {
 
 }
 
-// module.exports = Mortgage; // node version 12
+//module.exports = Mortgage; // node version 12
 export {Mortgage}; // node version 14
