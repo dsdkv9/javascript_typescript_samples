@@ -105,9 +105,45 @@ console.log('**** Student Map ****');
 let studentDetails = studentMap.get('id001');
 //console.log(studentDetails);
 
+console.log('\tFrom Stuent Map read and print name:');
 studentMap.forEach((studentDetails, studentId) => {
     //console.log(studentId +  " : " + studentDetails);
     for (const [key, value] of Object.entries(studentDetails)) {
+        //console.log(`${key}: ${value}`);
+        if (key === 'name') {
+            console.log(`${value}`);
+        }
+    }
+});
+
+
+console.log('\n**** Person Map ****');
+class Person {
+    constructor(name, dob, gender) {
+        this.name = name;
+        this.dob = dob;
+        this.gender = gender;
+    }
+}
+
+let person1 = new Person('EmpName 1', '10/10/1980', 'M');
+let person2 = new Person('EmpName 2', '01/2/1990', 'F');
+let person3 = new Person('EmpName 3', '09/20/1985', 'M');
+
+let employeesMap = new Map();
+employeesMap.set('E001', person1);
+employeesMap.set('E002', person2);
+employeesMap.set('E003', person3);
+
+// console.log('**** Employees Map ****');
+// console.log(employeesMap);
+// let employee = employeesMap.get('E001');
+// console.log(studentDetails)
+
+console.log('\tFrom Employee Map read and print name:');
+employeesMap.forEach((employeesMap, empId) => {
+    //console.log(studentId +  " : " + studentDetails);
+    for (const [key, value] of Object.entries(employeesMap)) {
         //console.log(`${key}: ${value}`);
         if (key === 'name') {
             console.log(`${value}`);
