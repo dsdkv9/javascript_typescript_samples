@@ -1,43 +1,44 @@
-// let myObject = { 'a': 1, 'b': 2, 'c': 3 };
-// let myObjectMap = new Map(Object.entries(myObject));
+/*
+let myObject = { 'a': 1, 'b': 2, 'c': 3 };
+let myObjectMap = new Map(Object.entries(myObject));
 
-// let freeCodeCampBlog = new Map([
-//     ['name', 'freeCodeCamp'],
-//     ['type', 'blog'],
-//     ['writer', 'Tapas Adhikary'],
-// ]);
+let freeCodeCampBlog = new Map([
+    ['name', 'freeCodeCamp'],
+    ['type', 'blog'],
+    ['writer', 'Tapas Adhikary'],
+]);
 
 
-// console.log("freeCodeCampBlog: " + typeof freeCodeCampBlog);
-// console.log(freeCodeCampBlog);
-// console.log("myObject: " + typeof myObject);
-// console.log(myObject)
-// console.log("Object.entries(myObject)");
-// console.log(Object.entries(myObject));
-// console.log("myObjectMap: " + typeof myObjectMap);
-// console.log(myObjectMap);
+console.log("freeCodeCampBlog: " + typeof freeCodeCampBlog);
+console.log(freeCodeCampBlog);
+console.log("myObject: " + typeof myObject);
+console.log(myObject)
+console.log("Object.entries(myObject)");
+console.log(Object.entries(myObject));
+console.log("myObjectMap: " + typeof myObjectMap);
+console.log(myObjectMap);
 
-// let map1 = new Map([
-//     [1, 2],
-//     [2, 3],
-//     [4, 5]
-// ]);
+let map1 = new Map([
+    [1, 2],
+    [2, 3],
+    [4, 5]
+]);
 
-// console.log(map1.get(1));
+console.log(map1.get(1));
 
-// let map2 = new Map([
-//     ["firstname", "sumit"],
-//     ["lastname", "ghosh"],
-//     ["website", "geeksforgeeks"]
-// ]);
+let map2 = new Map([
+    ["firstname", "sumit"],
+    ["lastname", "ghosh"],
+    ["website", "geeksforgeeks"]
+]);
 
-// console.log(map2.get("firstname"));
+console.log(map2.get("firstname"));
 
-// let map3 = new Map([["whole numbers", [1, 2, 3, 4]],
-// ["Decimal numbers", [1.1, 1.2, 1.3, 1.4]],
-// ["negative numbers", [-1, -2, -3, -4]]]);
+let map3 = new Map([["whole numbers", [1, 2, 3, 4]],
+["Decimal numbers", [1.1, 1.2, 1.3, 1.4]],
+["negative numbers", [-1, -2, -3, -4]]]);
 
-// console.log(map3.get("whole numbers"));
+console.log(map3.get("whole numbers"));
 
 let studentMap = new Map([
     ['id001', ['NID01','StudentName1']],
@@ -65,3 +66,51 @@ console.log('\n**** tempStudentMap Map Keys ****');
 console.log(tempStudentMap.keys());
 console.log('\n**** tempStudentMap Map Keys ****');
 console.log(tempStudentMap.values());
+
+for (const[studentId, studentDetils] of studentMap.entries()) {
+    //console.log(`${studentId} : ${studentDetils}`);
+    console.log(studentDetils.entries());
+}
+*/
+
+let studentMap = new Map([
+    ['id001',
+        {
+            'name': 'StudentName1',
+            'dob': '01/01/2001',
+            'gender': 'M'
+        }
+    ],
+    ['id002',
+        {
+            'name': 'StudentName2',
+            'dob': '10/01/2002',
+            'gender': 'M'
+        }],
+    ['id003',
+        {
+            'name': 'StudentName2',
+            'dob': '01/01/2005',
+            'gender': 'F'
+        }
+    ],
+    ['id004',
+        {
+            'name': 'StudentName2'
+        }
+    ],
+]);
+
+console.log('**** Student Map ****');
+let studentDetails = studentMap.get('id001');
+//console.log(studentDetails);
+
+studentMap.forEach((studentDetails, studentId) => {
+    //console.log(studentId +  " : " + studentDetails);
+    for (const [key, value] of Object.entries(studentDetails)) {
+        //console.log(`${key}: ${value}`);
+        if (key === 'name') {
+            console.log(`${value}`);
+        }
+    }
+});
