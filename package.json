@@ -2,7 +2,6 @@
   "name": "javascript_samples",
   "version": "1.0.0",
   "description": "Javascript sample for codes for Test Automation Engineers.",
-  "type": "module",
   "scripts": {
     "clean": "rm -rf node_modules && yarn"
   },
