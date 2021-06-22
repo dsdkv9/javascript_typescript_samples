@@ -40,6 +40,8 @@ let map3 = new Map([["whole numbers", [1, 2, 3, 4]],
 
 console.log(map3.get("whole numbers"));
 
+*/
+
 let studentMap = new Map([
     ['id001', ['NID01','StudentName1']],
     ['id002', ['NID02','StudentName2']],
@@ -47,33 +49,32 @@ let studentMap = new Map([
     ['id004', ['NID04','StudentName2']],
 ]);
 
-console.log('**** Student Map ****');
-console.log(studentMap);
-console.log('\n**** Student Map Keys ****');
-console.log(studentMap.keys());
-console.log('\n**** Student Map Values****');
-console.log(studentMap.values());
-console.log('\n**** Converted Student Details from Object to Map and Printed Keys ****');
-let student = studentMap.get('id001');
-console.log('student');
-console.log(student);
-console.log('student typeof');
-console.log(typeof student);
-let tempStudentMap = new Map(Object.entries(student));
-console.log('Converted student object to map tempStudentMap to print:');
-console.log(tempStudentMap);
-console.log('\n**** tempStudentMap Map Keys ****');
-console.log(tempStudentMap.keys());
-console.log('\n**** tempStudentMap Map Keys ****');
-console.log(tempStudentMap.values());
+// console.log('**** Student Map ****');
+// console.log(studentMap);
+// console.log('\n**** Student Map Keys ****');
+// console.log(studentMap.keys());
+// console.log('\n**** Student Map Values****');
+// console.log(studentMap.values());
+// console.log('\n**** Converted Student Details from Object to Map and Printed Keys ****');
+// let student = studentMap.get('id001');
+// console.log('student');
+// console.log(student);
+// console.log('student typeof');
+// console.log(typeof student);
+// let tempStudentMap = new Map(Object.entries(student));
+// console.log('Converted student object to map tempStudentMap to print:');
+// console.log(tempStudentMap);
+// console.log('\n**** tempStudentMap Map Keys ****');
+// console.log(tempStudentMap.keys());
+// console.log('\n**** tempStudentMap Map Keys ****');
+// console.log(tempStudentMap.values());
 
 for (const[studentId, studentDetils] of studentMap.entries()) {
     //console.log(`${studentId} : ${studentDetils}`);
     console.log(studentDetils.entries());
 }
-*/
 
-let studentMap = new Map([
+studentMap = new Map([
     ['id001',
         {
             'name': 'StudentName1',
@@ -106,7 +107,17 @@ let studentDetails = studentMap.get('id001');
 //console.log(studentDetails);
 
 console.log('\tFrom Stuent Map read and print name:');
-studentMap.forEach((studentDetails, studentId) => {
+
+studentMap.forEach((studentDetails) => {
+    for ([key, value] of Object.entries(studentDetails)) {
+        //console.log(key, value);
+        if (key === 'name') {
+            console.log(`${value}`);
+        }
+    }
+});
+/*
+studentMap.forEach((studentDetails) => {
     //console.log(studentId +  " : " + studentDetails);
     for (const [key, value] of Object.entries(studentDetails)) {
         //console.log(`${key}: ${value}`);
@@ -115,6 +126,7 @@ studentMap.forEach((studentDetails, studentId) => {
         }
     }
 });
+*/
 
 
 console.log('\n**** Person Map ****');
