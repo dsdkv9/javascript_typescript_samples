@@ -18,3 +18,7 @@ https://dmitripavlutin.com/6-ways-to-declare-javascript-functions/
 
 Export/ Import:
 https://stackabuse.com/how-to-use-module-exports-in-node-js
+
+Async:
+https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+
