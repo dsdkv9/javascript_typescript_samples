@@ -152,6 +152,9 @@ employeesMap.set('E003', person3);
 // let employee = employeesMap.get('E001');
 // console.log(studentDetails)
 
+console.log('\tConvert employee object to map & gets its values');
+console.log(Object.entries(person1));
+
 console.log('\tFrom Employee Map read and print name:');
 employeesMap.forEach((employeesMap, empId) => {
     //console.log(studentId +  " : " + studentDetails);

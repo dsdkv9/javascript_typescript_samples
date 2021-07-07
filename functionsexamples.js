@@ -86,3 +86,4 @@ const startTime = date.getTime();
 setTimeout(message, 6000);
 const endTime = date.getTime();
 console.log(`Delay in seconds: ${(endTime - startTime)}`);
+
