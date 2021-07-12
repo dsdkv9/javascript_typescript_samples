@@ -4,6 +4,8 @@ let freeCodeCampBlog = new Map([
     ['writer', 'Tapas Adhikary'],
   ]);
 
+  console.log(freeCodeCampBlog.get('name'));
+
 class NationalId{
     constructor(id, name, gender, dob, religion, fathername, mothername) {
         this.id = id;
@@ -49,6 +51,7 @@ let empMap = new Map([
  studentsMap.set('S0002', 'Student 2');
  studentsMap.set('S0003', 'Student 1');
 
+ console.log(studentsMap.get('S0001'));
  console.log(studentsMap);
 
  console.log(studentsMap.has(1001));
@@ -64,6 +67,7 @@ let empMap = new Map([
     console.log(entry); // cucumber,500 (and so on)
   }
  
+  console.log(recipeMap.get['cucumber']);
 
   // recipeMap.forEach((v, k, m) => {
   //   console.log(k);
