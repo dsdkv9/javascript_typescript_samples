@@ -35,28 +35,24 @@ try {
         });
     }
 
-    function printAllVals(obj, getAttributeValue) {
+    function getObjectAttributeValue(obj, attributeName) {
         for (let k in obj) {
             if (typeof obj[k] === "object") {
-                printAllVals(obj[k])
+                getObjectAttributeValue(obj[k]);
             } else {
-                // base case, stop recurring
-                if (k === getAttributeValue) {
+                // stop recurring
+                if (k === attributeName) {
                     console.log(obj[k]);
                 }
             }
         }
     }
 
-    //printAllVals(configurationsObj);
-
-    function getValue(objMap, envName, getAttributeValue) {
-        const keys = Object.keys(objMap);
+    function getValue(objects, envName, attributeName) {
+        const keys = Object.keys(objects);
         keys.forEach(key => {
             if (key === envName) {
-                // console.log(key);
-                // console.log(objMap[key]);
-                printAllVals(objMap[key], getAttributeValue);
+                getObjectAttributeValue(objects[key], attributeName);
             }
         });
     }
