@@ -2,6 +2,9 @@ staging2:
   url: "https://staging2.vms.carta.healthcare"
   userName: "creator@carta.healthcare"
   password: "BlackMark$FromGospodin2021"
+  morevalidations:
+    role_id: "Role1234"
+    secret_key: "Secret Key"
 
 canary2:
   url: "https://canary2.vms.carta.healthcare"
