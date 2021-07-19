@@ -1,4 +1,4 @@
-const testFolder = 'yamls';
+const testFolder = '../yamls';
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
@@ -7,12 +7,14 @@ let fileContents = '';
 let pageObjectMap = new Map();
 
 try {
-    fs.readdirSync(testFolder).forEach(file => {
-        console.log(`__dirname: ${__dirname}`);
-        let fileRelativePath = path.join(__dirname,testFolder, file);
+    console.log(`__dirname: ${__dirname}`);
+    let filepath = path.resolve(__dirname, testFolder);
+    console.log(`filepath: ${filepath}`);
+    console.log('***************************');
+    fs.readdirSync(filepath).forEach(file => {
+        console.log(`file: ${file}`);
+        let fileRelativePath = path.join(filepath, file);
         fileContents = fs.readFileSync(fileRelativePath, 'utf8');
-        // console.log(Object.keys(yaml.load(fileContents)));
-        // console.log(Object.values(yaml.load(fileContents)));
         pageObjectMap.set(Object.keys(yaml.load(fileContents)), 
         Object.values(yaml.load(fileContents)));
     });
