@@ -1,0 +1,5 @@
+carta_login_page:
+  login_input: '#loginInput'
+  find_me_button: '.login-form > .submit-login-form'
+  password_input: '#password'
+  login_button: ".[aria-hidden='false'] .submit-login-form"
