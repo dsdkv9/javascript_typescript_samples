@@ -19,25 +19,33 @@ try {
     console.log(e);
 }
 
-pageObjectMap.forEach((value, key) => {
-    if (String(key) === 'carta_login_page') {
-        for (let k in value) {
-            getObjectAttributeValue(value[k], 'login_input');
-        }
-    }
-});
-
 function getObjectAttributeValue(obj, attributeName) {
-    console.log('**** getObjectAttributeValue ****');
-    console.log(obj);
+    // console.log(obj);
+    // console.log(attributeName);
     for (let k in obj) {
         if (typeof obj[k] === "object") {
             getObjectAttributeValue(obj[k]);
         } else {
             if (String(k) === attributeName) {
                 console.log(obj[k]);
+                return obj[k];
                 break;
             }
         }
     }
 }
+
+function getPageElementLocator (page_name, element) {
+    // console.log(page_name);
+    // console.log(element);
+    pageObjectMap.forEach((value, key) => {
+        if (String(key) === page_name) {
+            for (let k in value) {
+                console.log(getObjectAttributeValue(value[k], element));
+            }
+        }
+    });
+}
+
+console.log(getPageElementLocator('carta_login_page', 'login_input'));
+//console.log(getPageElementLocator('carta_home_page', 'main_menu_button'));
