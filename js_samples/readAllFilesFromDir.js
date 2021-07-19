@@ -4,22 +4,19 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 let fileContents = '';
-let pageObjectArray = new Array();
+let pageObjectMap = new Map();
+
 try {
     fs.readdirSync(testFolder).forEach(file => {
         let fileRelativePath = path.join(__dirname,'yamls', file);
         fileContents = fs.readFileSync(fileRelativePath, 'utf8');
-        pageObjectArray.push(yaml.load(fileContents));
+        // console.log(Object.keys(yaml.load(fileContents)));
+        // console.log(Object.values(yaml.load(fileContents)));
+        pageObjectMap.set(Object.keys(yaml.load(fileContents)), 
+        Object.values(yaml.load(fileContents)));
     });
 } catch (e) {
     console.log(e);
-}
-
-
-let pageObjectMap = new Map();
-
-for (let item in pageObjectArray) {
-    pageObjectMap.set(Object.keys(pageObjectArray[item]), Object.values(pageObjectArray[item]));
 }
 
 pageObjectMap.forEach((value, key) => {
