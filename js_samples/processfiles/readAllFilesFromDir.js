@@ -23,6 +23,8 @@ try {
 }
 
 function getObjectAttributeValue(obj, attributeName) {
+    console.log('**** getObjectAttributeValue ****');
+    console.log(obj);
     for (let k in obj) {
         if (typeof obj[k] === "object") {
             getObjectAttributeValue(obj[k]);
