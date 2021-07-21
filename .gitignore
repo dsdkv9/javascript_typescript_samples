@@ -1,3 +1,4 @@
 js_samples/node_modules/
 ts_samples/node_modules/
 ts_samples/build
+ts_samples/dist/
