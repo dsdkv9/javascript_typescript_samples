@@ -2,10 +2,10 @@
   "name": "ts_samples",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.ts",
   "scripts": {
-    "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
