@@ -14,7 +14,7 @@ tsconfig:
 tsc -init
 https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
 
-Typescript doc: https://www.typescripttutorial.net/
+Typescript doc: https://www.tutorialsteacher.com/typescript
 
 ES6: https://www.javascripttutorial.net/es6/
 
