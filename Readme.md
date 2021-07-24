@@ -14,8 +14,14 @@ tsconfig:
 tsc -init
 https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
 
-Typescript doc: https://www.tutorialsteacher.com/typescript
+Typescript doc: 
+    https://www.tutorialsteacher.com/typescript
+    https://www.typescriptlang.org/docs/handbook/2/modules.html
+    https://www.koderhq.com/tutorial/typescript/
 
+TS Export/ Import:
+    https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html
+    
 ES6: https://www.javascripttutorial.net/es6/
 
 Create TS dist: 
