@@ -21,6 +21,8 @@ Typescript doc:
 
 TS Export/ Import:
     https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html
+    https://newbedev.com/how-to-export-a-class-instance-in-typescript
+    https://betterprogramming.pub/a-handy-guide-to-export-and-import-modules-for-javascript-and-typescript-6cff8e47d554
     
 ES6: https://www.javascripttutorial.net/es6/
 
