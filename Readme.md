@@ -7,6 +7,9 @@ install ts-node:
     npm install -g ts-node
     ts-node -v
 
+TypeScript tutorial:
+    https://www.tutorialsteacher.com/typescript/typescript-array 08/11
+
 tsconfig: 
     https://cameronnokes.com/blog/the-30-second-guide-to-publishing-a-typescript-package-to-npm/
     https://howtodoinjava.com/typescript/tsconfig-json/
