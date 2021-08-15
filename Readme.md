@@ -8,7 +8,7 @@ install ts-node:
     ts-node -v
 
 TypeScript tutorial:
-    https://www.tutorialsteacher.com/typescript/typescript-array 08/11
+    https://www.tutorialsteacher.com/typescript/typescript-enum 08/12
 
 tsconfig: 
     https://cameronnokes.com/blog/the-30-second-guide-to-publishing-a-typescript-package-to-npm/
