@@ -8,7 +8,8 @@ install ts-node:
     ts-node -v
 
 TypeScript tutorial:
-    https://www.tutorialsteacher.com/typescript/typescript-enum 08/12
+    https://www.tutorialsteacher.com/typescript/typescript-interface 08/17
+    https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types 08/17
 
 tsconfig: 
     https://cameronnokes.com/blog/the-30-second-guide-to-publishing-a-typescript-package-to-npm/
