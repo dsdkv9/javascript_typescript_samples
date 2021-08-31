@@ -8,10 +8,11 @@ install ts-node:
     ts-node -v
 
 TypeScript tutorial:
-    namespace: https://levelup.gitconnected.com/namespaces-in-typescript-7bab2fa31d75
-    Training: https://www.tutorialsteacher.com/typescript/typescript-interface
-    https://www.tutorialsteacher.com/typescript/typescript-interface 08/17
-    https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types 08/17
+    namespace: 
+        https://levelup.gitconnected.com/namespaces-in-typescript-7bab2fa31d75
+        https://www.typescriptlang.org/docs/handbook/namespaces.html
+    Training: https://www.tutorialsteacher.com
+        TODO: Project compilation
 
 tsconfig: 
     https://cameronnokes.com/blog/the-30-second-guide-to-publishing-a-typescript-package-to-npm/
