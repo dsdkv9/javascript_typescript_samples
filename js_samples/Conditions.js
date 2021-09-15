@@ -16,3 +16,17 @@ result = (a !== null && a !== undefined) ? a : b;
 
 console.log(`result: ${result}`);
 
+let x = 10;
+let y = 20;
+let z = 30;
+
+if ( x > y ) {
+    console.log(`x: ${x}`);
+} else if ( y > z ) {
+    console.log(`y: ${y}`);
+} else {
+    console.log(`z: ${z}`);
+}
+
+console.log( 1 == false );
+console.log( 0 === false );
