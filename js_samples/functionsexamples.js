@@ -81,9 +81,18 @@ const message = async function() {
     await console.log(`This message is shown after seconds`);
 }
 
-let date = new Date();
-const startTime = date.getTime();
-setTimeout(message, 6000);
-const endTime = date.getTime();
-console.log(`Delay in seconds: ${(endTime - startTime)}`);
+// let date = new Date();
+// const startTime = date.getTime();
+// setTimeout(message, 6000);
+// const endTime = date.getTime();
+// console.log(`Delay in seconds: ${(endTime - startTime)}`);
 
+
+function testNotArrowSum(x , y) {
+    return (x + y);
+}
+
+console.log(testNotArrowSum(10, 20));
+
+let testArrowSum = (x, y) => {return (x + y)};
+console.log(testArrowSum(21, 2));
