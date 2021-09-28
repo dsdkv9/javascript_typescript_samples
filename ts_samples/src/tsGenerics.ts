@@ -17,3 +17,12 @@ function displayType<T, U>(id: T, name: U): void {
 displayType<number, string>(1, "Steve"); // number, string
 
 
+let numList: number[] = [1,2,3,4,5];
+let stringLit: string[] = ['hello', 'world', 'good', 'morning'];
+
+function arrayLength<A>(array: Array<A>): number {
+    return array.length;
+}
+
+console.log(arrayLength(numList));
+console.log(arrayLength(stringLit));
