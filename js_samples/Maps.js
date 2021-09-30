@@ -86,3 +86,11 @@ let empMap = new Map([
   console.log(testSet.values());
 
   // TODO -> MAP to OBJECT and Vice-Versa
+
+  let empArray = new Array(); // []
+  empArray.push("emp1");
+  empArray.push("emp2");
+  empArray.push("emp3");
+  empArray.push("emp3");
+
+  
