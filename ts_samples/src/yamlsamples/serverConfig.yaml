@@ -1,0 +1,14 @@
+testServer1:
+  url: "https://testserver1"
+  creator:
+    username: "creator"
+    password: "CreatorPassword123"
+  leadabstractor:
+    username: "leadabstractor"
+    password: "LeadPassword123"
+
+testServer2:
+  url: "https://testserver2"
+  creator:
+    username: "creator"
+    password: "CreatorPassword123"
