@@ -8,12 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^16.10.1",
-    "typescript": "^4.3.5"
-  },
+  "devDependencies": {},
   "dependencies": {
     "@types/js-yaml": "^4.0.3",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3",
     "typescript-logging": "^1.0.0"
   }
 }
