@@ -7,6 +7,10 @@ install ts-node:
     npm install -g ts-node
     ts-node -v
 
+JavaScript Tutorial:
+    -   https://www.programiz.com/javascript
+    -   https://javascript.info/
+
 TypeScript tutorial:
     namespace: 
         https://levelup.gitconnected.com/namespaces-in-typescript-7bab2fa31d75

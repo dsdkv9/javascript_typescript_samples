@@ -61,10 +61,15 @@ let jimCurrentSal = {
     empid: 'E0001',
     basic: 10000,
     da: 50000,
-    ta: 5000
+    ta: 5000,
+    medical: 2000
 };
 
 console.log(jimCurrentSal);
+
+// console.log(Object.keys(jimCurrentSal));
+// console.log(Object.values(jimCurrentSal));
+console.log(Object.entries(jimCurrentSal));
 
 // Object.entries(jimCurrentSal).map(entry => {
 //     return ([entry[0], entry[1] * 2]);
@@ -73,6 +78,7 @@ console.log(jimCurrentSal);
 let jimNewSal = Object.fromEntries(
     //Object.entries(jimCurrentSal).map(entry => [entry[0], entry[1] * 2])
     Object.entries(jimCurrentSal).map(entry => {
+        // let entry =   entries[0].map() => [ 'empid', 'E0001' ];
         let value = entry[1];
         if (entry[0] !== 'empid') {
             value = value + (value / 10);
@@ -82,3 +88,12 @@ let jimNewSal = Object.fromEntries(
 );
 
 console.log(jimNewSal);
+
+empArray = ["emp1", "emp2", "emp3"]
+console.log(empArray);
+let empTMap = new Map();
+
+for(let i = 0; i < empArray.length; i++) {
+    empTMap.set(i, empArray[i]);
+}
+console.log(empTMap);
