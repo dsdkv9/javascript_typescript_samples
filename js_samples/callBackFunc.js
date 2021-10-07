@@ -1,3 +1,33 @@
+const { sum } = require("lodash");
+
+let add = (num1, num2) => { return (num1 + num2) };
+let sub = (num1, num2) => { return (num1 - num2) };
+let mul = (num1, num2) => { return (num1 * num2) };
+let div = (num1, num2) => { return (num1 / num2) };
+
+function calculator(num1, num2, action) {
+    switch (action) {
+        case 'add':
+            console.log(add(num1, num2));
+            break;
+        case 'sub':
+            console.log(sub(num1, num2));
+            break;
+    }
+}
+
+calculator(10, 12, 'add');
+calculator(10, 12, 'sub');
+
+function calculatorCallback(num1, num2, generic) {
+    console.log(generic(num1, num2));
+}
+
+calculatorCallback(10, 20, mul);
+calculatorCallback(110, 20, div);
+
+
+
 console.log('**** Function Sequence ****');
 function myDisplayer(str) {
     console.log(str)
@@ -56,13 +86,13 @@ console.log('--------------');
 //  program that shows the delay in execution
 
 function greet2nd() {
-    console.log('Hello world');
+    console.log('greet2nd -> Hello world');
 }
 
 function sayName2nd(name) {
-    console.log('Hello' + ' ' + name);
+    console.log('sayName2nd -> Hello' + ' ' + name);
 }
 
 // calling the function
-setTimeout(greet2nd, 2000);
+setTimeout(greet2nd, 5000);
 sayName2nd('John');
