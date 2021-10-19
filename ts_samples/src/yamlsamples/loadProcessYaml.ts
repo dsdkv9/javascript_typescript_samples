@@ -1,14 +1,16 @@
 import { load } from "js-yaml";
-import * as fs from "fs";
+import fs from "fs";
+import * as path from 'path';
+
 //import { serverConfigDataMap } from "./server_config_data";
 import serverConfigDataMap = require("./server_config_data")
 
-// console.log(__dirname);
-// console.log(process.cwd());
+console.log(__dirname);
+console.log(process.cwd());
 
-// const fileContent = fs.readFileSync(
-//     "src//yamlsamples//sampledata.yaml", "utf8");
-// console.log(fileContent);
+const fileContent = fs.readFileSync(
+    "src//yamlsamples//serverConfig.yaml", "utf8");
+console.log(fileContent);
 
 let serverConfigDataMapToSave= serverConfigDataMap;
 

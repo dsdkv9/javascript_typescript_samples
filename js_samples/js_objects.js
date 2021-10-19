@@ -56,19 +56,20 @@ let user2 = new User('Abcd1', 'Defg1', 10);
 
 class Animal {
     name = "Animal";
-    constructor() {
-        //this.name = 'animal';
-        console.log(this.name); // (*)
+    constructor(age) {
+        this.age = age;
+        console.log(this.name + " & " + this.age);
     }
 }
 
 class Rabbit extends Animal {
     name = "Rabbit";
-    constructor() {
+    constructor(age) {
         super();
-        console.log(this.name);
+        this.age = age;
+        console.log(this.name + " & " + this.age);
     }
 }
 
-new Animal(); // animal
-new Rabbit(); // animal
+new Animal(10); // animal
+new Rabbit(2); // animal
