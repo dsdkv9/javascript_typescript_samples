@@ -36,3 +36,17 @@ JSON.parse('{"emp001":{"name":"Deepak","age":42,"address":{"city":"Thane"}},"emp
 
 console.log(empObjList["emp001"]);
 console.log(empObjList["emp001"]["address"]["city"]);
+
+interface IMapServerConfig {
+    serverName: {
+        url: string;
+        role: {
+            username: string;
+            password: string;
+        }
+    }
+}
+
+let serverConfig: IMapServerConfig = JSON.parse(jsonObj);
+console.log(serverConfig);
+console.log(serverConfig["testServer1"]);
