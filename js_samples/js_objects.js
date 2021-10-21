@@ -56,8 +56,9 @@ let user2 = new User('Abcd1', 'Defg1', 10);
 
 class Animal {
     name = "Animal";
-    constructor(age) {
-        this.age = age;
+    _legs = 4;
+    constructor(a) {
+        this.age = a;
         console.log(this.name + " & " + this.age);
     }
 }
@@ -65,11 +66,38 @@ class Animal {
 class Rabbit extends Animal {
     name = "Rabbit";
     constructor(age) {
-        super();
-        this.age = age;
+        super(age);
+        //this.age = age;
         console.log(this.name + " & " + this.age);
     }
 }
 
-new Animal(10); // animal
-new Rabbit(2); // animal
+let animal1 = new Animal(10); // animal
+console.log(animal1.age);
+console.log(animal1._legs);
+
+//new Animal(); // animal
+//new Rabbit(2); // animal
+
+
+class CoffeeMachine {
+    _waterAmount = 0;
+    _waterLimit = 210;
+    #waterLimit = 200;
+  
+    setWaterAmount(value) {
+      if (value < 0) value = 0;
+      this._waterAmount = value;
+    }
+  
+    getWaterAmount() {
+      return this._waterAmount;
+    }
+  }
+  
+  let coffeeMach1 = new CoffeeMachine();
+  coffeeMach1.setWaterAmount(100);
+  console.log(coffeeMach1.getWaterAmount());
+  console.log(coffeeMach1._waterAmount);
+  console.log(coffeeMach1._waterLimit);
+  //console.log(coffeeMach1.#waterLimit);
