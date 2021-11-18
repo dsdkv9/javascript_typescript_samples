@@ -1,17 +1,20 @@
 // Export by export
-module.exports.age = 1
+module.exports.age = 1;
 
 module.exports.printMsg = function (msg) { 
     return (`Hello from CommonJS, ${msg}`)
 }
 
-exports.a = 'hello'
+exports.a = 'hello';
 
 function printMsgOne(msg) { 
     return (`Goodbye from CommonJS, ${msg}`)
 }
 
 module.exports.printMsgOne = printMsgOne;
+
+
+ 
 
 
 

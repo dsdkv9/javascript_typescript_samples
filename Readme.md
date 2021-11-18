@@ -15,7 +15,7 @@ TypeScript tutorial:
     namespace: 
         https://levelup.gitconnected.com/namespaces-in-typescript-7bab2fa31d75
         https://www.typescriptlang.org/docs/handbook/namespaces.html
-    Training: https://www.tutorialsteacher.com
+    Training: https://www.tutorialsteacher.com/typescript
         TODO: Project compilation
 
 tsconfig: 
