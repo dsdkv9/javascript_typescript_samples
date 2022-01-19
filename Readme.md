@@ -26,7 +26,7 @@ tsc -init
 https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
 
 Typescript doc: 
-    https://www.tutorialsteacher.com/typescript
+    https://www.tutorialsteacher.com/typescript - Training
     https://www.typescriptlang.org/docs/handbook/2/modules.html
     https://www.koderhq.com/tutorial/typescript/
 

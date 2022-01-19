@@ -1,5 +1,1 @@
-console.log("Hello world!");
-
-console.log(3 +
-    1
-    + 2);
+console.log("Welcome to JavaScript training!");
