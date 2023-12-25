@@ -69,7 +69,7 @@ student_list.push(12);
 student_list.push('Test 5');
 console.log(student_list);
 
-console.log("\n*** or (let i = 0; i < student_list.length; i++) { ***");
+console.log("\n*** ror (let i = 0; i < student_list.length; i++) { ***");
 for (let i = 0; i < student_list.length; i++) {
     console.log(student_list[i]);
 }
