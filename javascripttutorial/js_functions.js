@@ -44,7 +44,7 @@ function average(a, b, fn) {
 let result = average(18, 24, sum);
 printStr(result);
 
-printStr('\n*** Functions are first-class citizens ***\n')
+printStr("\n*** Functions are first-class citizens ***\n");
 function compareBy(propertyName) {
   return function (a, b) {
     let x = a[propertyName],
@@ -71,7 +71,68 @@ products.sort(compareBy("name"));
 
 console.table(products);
 
-printStr('\n*** Anonymous Functions ***\n')
-https://www.javascripttutorial.net/javascript-anonymous-functions/
+function cmToIn(length) {
+  return length / 2.54;
+}
 
+function inToCm(length) {
+  return length * 2.54;
+}
+
+function convert(fn, length) {
+  return fn(length);
+}
+
+let inches = convert(cmToIn, 10);
+console.log(inches);
+
+let cm = convert(inToCm, 10);
+console.log(cm);
+
+
+printStr('\n*** Anonymous Functions ***\n');
+let person = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+(function () {
+  console.log('IIFE - Immediately invoked function execution ' + person.firstName);
+})(person);
+
+printStr('\n*** Arrow Functions ***\n');
+let show = function (a, b) {
+  console.log('Arrow function: ' + a + " - " + b);
+};
+
+show(19, 'KKKK');
+
+let showArrow = (a, b) => a + b;
+printStr(showArrow(19, 9));
+
+printStr("\n*** Understanding JavaScript Pass-By-Value ***\n");
+
+function square(x) {
+  x = x * x;
+  return x;
+}
+
+let y = 18;
+
+result =  square(y);
+printStr(result);
+
+let person_1 = {
+  name: 'John',
+  age: 25,
+};
+
+function increaseAge(obj) {
+  obj.age += 1;
+}
+
+increaseAge(person_1);
+printStr(person_1);
+
+printStr("\n*** JavaScript Recursive Function ***\n");
 
