@@ -136,3 +136,37 @@ printStr(person_1);
 
 printStr("\n*** JavaScript Recursive Function ***\n");
 
+function countDown(fromNumber) {
+  console.log(fromNumber);
+
+  let nextNum = fromNumber - 1;
+
+  if (nextNum > 0) {
+    countDown(nextNum);
+  }
+}
+
+countDown(3);
+
+function recursiveSum(num) {
+
+  if (num <= 1) {
+    return num;
+  }
+
+  return num + recursiveSum(num - 1);
+}
+printStr("-------------------");
+printStr(recursiveSum(4));
+
+printStr("-------------------");
+function recursiveFact(n) {
+  if (n <= 1) {
+    return n;
+  }
+
+  return n * recursiveFact(n-1);
+}
+
+printStr(recursiveFact(4));
+
